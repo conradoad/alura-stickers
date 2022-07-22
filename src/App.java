@@ -10,8 +10,11 @@ public class App {
         // String url = "https://api.mocki.io/v2/549a5d8b";
         // ContentExtractor extractor = new ImdbContentExtractor();
 
-        String url = "https://api.nasa.gov/planetary/apod?api_key=ZJbySQVVBSr9jpWpQ92lgIIi5DB8rooP7bA1iTGj&start_date=2022-07-11&end_date=2022-07-13";
-        ContentExtractor extractor = new NasaContentExtractor();
+        // String url = "https://api.nasa.gov/planetary/apod?api_key=ZJbySQVVBSr9jpWpQ92lgIIi5DB8rooP7bA1iTGj&start_date=2022-07-11&end_date=2022-07-13";
+        // ContentExtractor extractor = new NasaContentExtractor();
+        
+        String url = "http://localhost:8080/languages";
+        ContentExtractor extractor = new LanguagesListContentExtractor();
         
         HttpClientClass httpClient = new HttpClientClass();
         String json = httpClient.searchData(url);

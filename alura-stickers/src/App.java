@@ -13,7 +13,7 @@ public class App {
         // String url = "https://api.nasa.gov/planetary/apod?api_key=ZJbySQVVBSr9jpWpQ92lgIIi5DB8rooP7bA1iTGj&start_date=2022-07-11&end_date=2022-07-13";
         // ContentExtractor extractor = new NasaContentExtractor();
         
-        String url = "http://localhost:8080/languages";
+        String url = "https://alura-java-immer-languages-api.herokuapp.com/languages";
         ContentExtractor extractor = new LanguagesListContentExtractor();
         
         HttpClientClass httpClient = new HttpClientClass();
